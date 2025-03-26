@@ -36,7 +36,7 @@ Prior to my PhD student, I obtained my Bachelor degree in the College of Enginee
 
 **Rong Wang**, Fabian Prada, Ziyan Wang, Zhongshi Jiang, Chengxiang Yin, Junxuan Li, Shunsuke Saito, Igor Santesteban, Javier Romero, Rohan Joshi, Hongdong Li, Jason Saragih, Yaser Sheikh
 
-[**GitHub**](https://github.com/rongakowang/FRESA)
+[**GitHub**](https://github.com/rongakowang/FRESA),  [**Project**](https://rongakowang.github.io/fresa/fresa.html)
 
 - We learn a universal prior from over a thousand clothed humans to achieve instant feedforward generation and zero-shot generalization, aiming for reconstructing personalized 3D human avatars with realistic animation from only a few images.
 </div>

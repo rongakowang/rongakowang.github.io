@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="FRESA: Feedforward Reconstruction of Personalized Skinned Avatars
+        from Few Images">
+  <meta name="keywords" content="Avatar Generation, Avatar Reconstruction, Avatar Reconstruction, Codec Avatar">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FRESA: Feedforward Reconstruction of Personalized Skinned Avatars
+    from Few Images</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><p>FRESA: Feedforward Reconstruction of Personalized Skinned Avatars
+            from Few Images</p></h1>
+            <p style="line-height: 0.5;">&nbsp;</p>
+            <div class="column is-full_width">
+              <h2 class="title is-4">CVPR 2025</h2>
+            </div>
+            <p style="line-height: 0.5;">&nbsp;</p>
+            <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ruyi-zha.github.io">Rong Wang</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=s35rxJwAAAAJ&hl=es">Fabian Prada</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://ziyanw1.github.io/">Ziyan Wang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=h8bGMF4AAAAJ&hl=en">Zhongshi Jiang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=yXTk6HAAAAAJ&hl=nl">Chengxiang Yin</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=b2_zvDMAAAAJ">Junxuan Li</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://shunsukesaito.github.io/">Shunsuke Saito</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://isantesteban.com/">Igor Santesteban</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=Wx62iOsAAAAJ&hl=en/">Javier Romero</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=L1jZb08AAAAJ&hl=en/">Rohan Joshi</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=ss-IvjMAAAAJ&hl=en/">Jason Saragih</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=Yd4KvooAAAAJ&hl=en/">Yaser Sheikh</a><sup>2</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Australian National University,</span>
+            <span class="author-block"><sup>2</sup>Meta Reality Labs Research</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2503.19207"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2503.19207"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/rongakowang/FRESA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/rongakowang/FRESA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+            <br />
+
+
+
+            <div class="container is-max-desktop">
+              <!-- Cover. -->
+              <!-- <div class="columns is-centered has-text-centered"> -->
+                <!-- <div class="column is-four-fifths"> -->
+                  <!-- <div class="publication-pipeline"> -->
+                    <img src="static/images/cover.png" alt="cover">
+                    <div class="columns is-centered has-text-centered">
+                    <div class="content has-text-justified"> 
+                    <br/>     
+                    <p><b>FRESA. </b>We present a novel method to reconstruct personalized skinned avatars with realistic pose-dependent animation all in a <em>feed-forward</em> approach, which generalizes to causally taken phone photos without any fine-tuning. We visualize predicted skinning weights associated with the most important joints in (b) and colormaps of per-vertex displacement magnitudes (normalized across all vertices to highlight large deformations) during animation in (c).
+                    </div>
+                  </div>
+                    <!-- </div> -->
+                <!-- </div> -->
+              <!-- </div> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present a novel method for reconstructing personalized 3D human avatars with realistic animation from only a few images. 
+            Due to the large variations in body shapes, poses, and cloth types, existing methods mostly require hours of per-subject optimization 
+            during inference, which limits their practical applications. In contrast, we learn a universal prior from over a thousand clothed humans
+            to achieve instant feedforward generation and zero-shot generalization. Specifically, instead of rigging the avatar with shared skinning
+            weights, we jointly infer personalized avatar shape, skinning weights, and pose-dependent deformations, which effectively improves overall
+            geometric fidelity and reduces deformation artifacts. Moreover, to normalize pose variations and resolve coupled ambiguity between 
+            canonical shapes and skinning weights, we design a 3D canonicalization process to produce pixel-aligned initial conditions, which helps 
+            to reconstruct fine-grained geometric details. We then propose a multi-frame feature aggregation to robustly reduce artifacts introduced 
+            in canonicalization and fuse a plausible avatar preserving person-specific identities. Finally, we train the model in an end-to-end framework
+            on a large-scale capture dataset, which contains diverse human subjects paired with high-quality 3D scans. Extensive experiments show that
+            our method generates more authentic reconstruction and animation than state-of-the-arts, and can be directly generalized to inputs from
+            casually taken phone photos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section">
+
+  <div class="container is-max-desktop">
+    <!-- Paper pipeline. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Pipeline</h2>
+        <div class="publication-pipeline">
+          <img src="static/images/pipeline.png" alt="pipeline">
+          <div class="content has-text-justified">
+          <p>We propose a novel method to feed-forwardly reconstruct personalized skinned avatars via a universal clothed human model. Specifically, given N frames of posed human images from front and back views, we first estimate their normal and segmentation images, and then unpose them for each frame and view to produce pixel-aligned initial conditions in a 3D canonicalization process. Next, we propose to aggregate mult-frame references and produce a single bi-plane feature as the representation of the subject identity. By sampling from this feature, we jointly decode personalized canonical avatar mesh, skinning weights and pose-dependent vertex displacement  
+            from a canonical tetrahedral grid. Finally, we adopt a multi-stage training process to train the model with posed-space ground truth and canonical-space regularization.</p>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="container is-max-desktop">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Canonical Shape Generation</h2>
+        <div class="results">
+          <img src="static/images/canonical.png" alt="canonical">
+            <p>&nbsp; Our method produces plausible personalized canonical avatars from various source images.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="container is-max-desktop">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Personalized Skinning Weights</h2>
+        <video poster="" id="skin" autoplay controls muted loop playsinline height="100%">
+          <source src="static/videos/video2.mp4"
+                  type="video/mp4">
+        </video>
+        <p>&nbsp; Personalized skinning weights for smooth animation for various body shapes and cloth types.</p>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+
+  <div class="container is-max-desktop">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Pose-Dependent Deformation</h2>
+        <video poster="" id="pp" autoplay controls muted loop playsinline height="100%">
+          <source src="static/videos/video1.mp4"
+                  type="video/mp4">
+        </video>
+        <p>&nbsp; Our model generates personalized pose dependent deformation, producing fine-grained wrinkles and dynamical effects for clothes, while also reduing LBS artifacts in animation.</p>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="container is-max-desktop">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Animation Comparison</h2>
+        <div class="results">
+          <img src="static/images/quali.png" alt="canonical" width="100%">
+            <p>When reposed to an unseen pose, we produce better results with reduced deformation artifacts and fine-grained wrinke details compared to baseline methods with nearest skinning.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="container is-max-desktop">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Multi-Frame Aggregation</h2>
+        <div class="results">
+          <img src="static/images/aggregation.png" alt="aggregate">
+            <p>By aggregating multiplue unposed results, our method produces a more plausible canonical shapes on loose parts (hairs and skirts) robust to noisy canonicalization.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="container is-max-desktop">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Texturing</h2>
+        <div class="results">
+          <img src="static/images/texture.png" alt="canonical" width="75%">
+            <p>Our model can be extended to produced textured meshes by learning a universal color feature.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{wang2025fresafeedforwardreconstructionpersonalizedskinned,
+      title={FRESA:Feedforward Reconstruction of Personalized Skinned Avatars from Few Images}, 
+      author={Rong Wang and Fabian Prada and Ziyan Wang and Zhongshi Jiang and Chengxiang Yin and Junxuan Li and Shunsuke Saito and Igor Santesteban and Javier Romero and Rohan Joshi and Hongdong Li and Jason Saragih and Yaser Sheikh},
+      year={2025},
+      eprint={2503.19207},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.19207}, 
+    }   
+    </code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
