@@ -17,17 +17,58 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a PhD student in the School of Computing at the Australian National University, supervised by Prof. [Hongdong Li](https://users.cecs.anu.edu.au/~hongdong/). I worked on a wide range of topics in computer vision, including 3D pose tracking and extended reality (with [Pan Ji](https://sites.google.com/view/panji530) at Tencent XR Vision Labs); avatar reconstruction and animation (with [Fabian Prada](https://scholar.google.com/citations?user=s35rxJwAAAAJ&hl=es) and [Jason Saragih](https://scholar.google.com/citations?user=ss-IvjMAAAAJ&hl=en) at Meta Codec Avatars Lab); 3D asset generation and video creation (with [Pulak Purkait](https://scholar.google.com/citations?user=fb5zcbUAAAAJ&hl=en) at Amazon IML). Please find more details in my [CV](https://rongakowang.github.io/files/CV.pdf).
+I am a recent PhD graduate from the School of Computing at the Australian National University, supervised by Prof. [Hongdong Li](https://users.cecs.anu.edu.au/~hongdong/). I worked on a wide range of topics in computer vision including:
+- 3D pose tracking and extended reality (with [Pan Ji](https://sites.google.com/view/panji530) at Tencent XR Vision Labs)
+- Personalized skinned avatar reconstruction and animation (with [Fabian Prada](https://scholar.google.com/citations?user=s35rxJwAAAAJ&hl=es) and [Jason Saragih](https://scholar.google.com/citations?user=ss-IvjMAAAAJ&hl=en) at Meta Codec Avatars Lab)
+- 3D asset generation and orbital video creation (with [Pulak Purkait](https://scholar.google.com/citations?user=fb5zcbUAAAAJ&hl=en) at Amazon IML)
+- Motion transfer for stylized characters (with [Takashi Shibuya](https://scholar.google.com/citations?user=XCRO260AAAAJ&hl=en) and [Kengo Uchida](https://ai.sony/people/kengo-uchida) at Sony AI).
 
 Prior to my PhD student, I obtained my Bachelor degree in the College of Engineering and Computer Science at the Australian National University, and was awarded with [University Medal](https://www.anu.edu.au/students/program-administration/prizes/university-medal-and-postgraduate-medal-for-academic-excellence) and [Erin Brent Computer Science Prize](https://www.anu.edu.au/students/program-administration/prizes/erin-brent-computer-science-prize#:~:text=The%20prize%20shall%20be%20awarded,Computer%20Science%2C%20Software%20Engineering%20or). I was also awarded with First Class Honours under the supervision of [Dongxu Li](https://sites.google.com/view/dongxu-li/home) and Hongdong Li.
+
+Please also find more details in my [CV](https://rongakowang.github.io/files/CV.pdf).
 
 # 💻 Work Experience
 - *2022.07 - 2023.04*, XR Vision Labs, [Tencent](https://www.tencent.com/), Research Intern.
 - *2024.06 - 2024.11*, Codec Avatars Lab, [Meta](https://about.meta.com/realitylabs/), Research Intern.
 - *2025.01 - 2025.07*, International Machine Learning, [Amazon](https://www.amazon.science/research-areas/machine-learning), Research Intern.
+- *2025.07 - 2025.11*, Music Foundation Modeling Team, [Sony AI](https://ai.sony/), Research Intern.
 
 
 # 📝 Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div><img src='images/eccv2026.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[GKDT: General Keypoint Detection Transformer](https://openreview.net/forum?id=xWF7oqRzME&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Dthecvf.com%2FECCV%2F2026%2FConference%2FAuthors%23your-submissions))
+
+Changsheng Lu, Yuxin Chen, Haokun GUI, **Rong Wang**, Jie Yang, Harry Yang, Anton van den Hengel, Jiaya Jia
+
+- We present MegaKPT, a large-scale unified keypoint dataset, and GKDT, a flexible DINOv3-based Transformer for general keypoint detection, supporting visual and text prompts to detect keypoints across broad seen and unseen object categories.
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/cvpr2026.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Towards Realistic and Consistent Orbital Video Generation via 3D Foundation Priors](https://cvpr.thecvf.com/virtual/2026/poster/37613)
+
+**Rong Wang**, Ruyi Zha, Ziang Cheng, Jiayu Yang, Pulak Purkait, Hongdong Li
+
+[**Video**](https://www.youtube.com/watch?v=_L5Gchb8xsw)
+
+- We present a novel method for generating geometrically realistic and consistent orbital videos from a single image, leveraging rich shape priors from a 3D foundation model to improve structural coherence, multi-view consistency, and generalization to complex camera trajectories.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">3DV 2026</div><img src='images/3dv.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Learning High-Fidelity Garment Deformation via Skinning-Free Image Transfer](https://ieeexplore.ieee.org/abstract/document/11533323)
+
+**Rong Wang**, Wei Mao, Changsheng Lu, Hongdong Li
+
+- We present a skinning-free image transfer framework for high-fidelity 3D garment deformation, decoupling low-frequency posed shapes and high-frequency wrinkle details to generate realistic animation across garments with diverse topologies.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/cvpr.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -111,8 +152,9 @@ Minjeong Shin, Alasdair Tran, Siqi Wu, Alexander Mathews, **Rong Wang**, Georgia
 - *2021*, University Medal.
 - *2021*, Erin Brent Computer Science Prize.
 - *2022*, Australian Government Research Training Program International Scholarship.
+- *2026*, Research Award for Doctoral [Thesis](https://openresearch-repository.anu.edu.au/items/ef05a23f-083a-4e3a-8155-26ee1ccc311b).
 
 # 📖 Educations
 - *2018.02 - 2021.12*, Bachelor of Advanced Computing (Research & Development).
-- *2022.02 - 2025.12*, Doctor of Philosophy, School of Computing.
+- *2022.02 - 2026.04*, Doctor of Philosophy, School of Computing.
 
